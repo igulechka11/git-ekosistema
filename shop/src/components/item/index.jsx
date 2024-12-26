@@ -1,8 +1,8 @@
 import './style.css';
 import { useState } from 'react';
 import bookList from './../../data.js';
-// import TextTruncate from 'react-text-truncate';
-
+//import TextTruncate from 'react-text-truncate';
+//var TextTruncate = require('react-text-truncate'); 
 //console.log(isFavorite)
 
 
@@ -39,13 +39,13 @@ const Item = () => {
 				<div className="cover"><img src={books.cover} alt="" /></div>
 				<div className="author">{books.author}</div>
 				<div className="name">
-				{/* <TextTruncate
+				 {/* <TextTruncate
 					line={1}
 					element="span"
 					truncateText="…"
 					text={books.name}
 				
-				/> */}
+				/>  */}
 				</div>
 				<div className='icon_wrap'>
 					<span onClick={()=> toggleFavorite(books.id)}>{books.isFavorite ? '♥' : '♡'}</span>

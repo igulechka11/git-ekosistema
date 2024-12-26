@@ -14,12 +14,12 @@ function App() {
     <div className="App">
       
       <Router>
-		<Header/>
+		    <Header/>
         <Routes>
-			<Route path='/' element={<Home/>} />
-			<Route path='/products' element={<Products/>} />
-			<Route path='/product' element={<Product />} />
-			<Route path='/createProduct' element={<CreateProduct/>} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/products' element={<Products/>} />
+          <Route path='/product' element={<Product />} />
+          <Route path='/createProduct' element={<CreateProduct/>} />
         </Routes>
       </Router>
     </div>
