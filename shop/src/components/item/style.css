@@ -34,10 +34,10 @@ a {text-decoration: none;}
     display: inline-block; 
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url(./../../img/icons/unlike.png);
+   
 }
 .item .like {
-    background-image: url(./../../img/icons/like.png);
+   
 }
 
 .item .icon_wrap {
