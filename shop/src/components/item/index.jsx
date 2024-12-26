@@ -1,9 +1,7 @@
 import './style.css';
 import { useState } from 'react';
 import bookList from './../../data.js';
-//import TextTruncate from 'react-text-truncate';
-//var TextTruncate = require('react-text-truncate'); 
-//console.log(isFavorite)
+import TextTruncate from 'react-text-truncate';
 
 
 const Item = () => {
@@ -24,14 +22,14 @@ const Item = () => {
 		setFavorite((current)=>{
 			return current.filter((itm)=> itm.id !== id)
 		})
-		//console.log(isRemane)
+		
 	}
 	
 	const filtered = showFavorites ? isFavor.filter((b) => b.isFavorite) : isFavor;
 
     return (
 		<>
-          <button onClick={()=> setShowFavorites(!showFavorites)}>{showFavorites ? 'all' : 'favorites'}</button>
+        <button onClick={()=> setShowFavorites(!showFavorites)}>{showFavorites ? 'all' : 'favorites'}</button>
 		  
         {filtered.map((books)=>
          
@@ -39,13 +37,13 @@ const Item = () => {
 				<div className="cover"><img src={books.cover} alt="" /></div>
 				<div className="author">{books.author}</div>
 				<div className="name">
-				 {/* <TextTruncate
+				  <TextTruncate
 					line={1}
 					element="span"
 					truncateText="…"
 					text={books.name}
 				
-				/>  */}
+				/>  
 				</div>
 				<div className='icon_wrap'>
 					<span onClick={()=> toggleFavorite(books.id)}>{books.isFavorite ? '♥' : '♡'}</span>
